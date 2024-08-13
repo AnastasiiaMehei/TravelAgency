@@ -1,0 +1,154 @@
+/* Reset styles */
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+a:focus,
+a:active {
+  color: currentColor;
+}
+
+html,
+body {
+  min-width: 320px;
+  scroll-behavior: smooth;
+}
+.wrapper {
+  min-height: 100%;
+  overflow: clip;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+a {
+  color: currentColor;
+  text-decoration: none;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  appearance: none;
+  background-color: transparent;
+  color: inherit;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+/* Root styles */
+:root {
+  font-family: Inter, sans-serif;
+  font-size: 10px;
+  line-height: 24px;
+  font-weight: 500;
+
+  color: #1c1d20;
+  background-color: #fff;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+
+  --font-family: Inter, sans-serif;
+  --main-color: #000000;
+
+  --hard-black-color: #1c1d20;
+  --medium-black-color: #242527;
+  --light-black-color: #3b3b3b;
+  --white-color: #fafafa;
+
+  --animation-hover: 250ms ease-in;
+}
+/* container */
+.container {
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+@media screen and (max-width: 374.98px) {
+  .container {
+    max-width: 375px;
+  }
+}
+
+@media screen and (min-width: 375px) {
+  .container {
+    max-width: 375px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .container {
+    max-width: 1440px;
+  }
+}
+/* =================== header =================== */
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  color: white;
+  /* padding: 15px 0; */
+}
+/* .header__wrapper {
+  display: flex;
+  justify-content: space-between;
+} */
+.header__logo {
+  cursor: pointer;
+  display: flex;
+}
+.logo {
+  display: flex;
+  flex-direction: column;
+}
+.logo-text {
+  text-transform: uppercase;
+}
+.address-navigation-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+.address {
+  display: flex;
+  flex-direction: row;
+}
+.navigation-links {
+  background-color: #fbd341;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 15px;
+  color: #000000;
+  font-weight: 700;
+  padding: 8px;
+  border-radius: 5px;
+}
+@media screen and (min-width: 768px) {
+}
