@@ -247,3 +247,101 @@ header {
     margin-right: 15px;
   }
 }
+/* section-feedback */
+.wrapper-section-feedback {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.background-image-container {
+  position: relative; /* Даємо можливість абсолютно позиціонувати елементи всередині */
+  background-image: url('./images/footer.png');
+  background-size: cover;
+  background-position: center;
+  height: 400px; /* Встановлюємо висоту, достатню для відображення зображення */
+  width: 100%;
+}
+
+.paragraph-section-feedback {
+  text-transform: uppercase;
+}
+/* .form-container {
+  background-size: cover;
+} */
+.feedback-form {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 20px;
+  background-color: rgba(14, 13, 13, 0.8);
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.feedback-form input {
+  background-color: inherit;
+  border: none;
+}
+.feedback-form select {
+  background-color: inherit;
+  color: #ffffff;
+  border: none;
+}
+.btn-form-section-feedback {
+  background-color: #fbd341;
+  border-radius: 15px;
+}
+@media screen and (min-width: 768px) {
+  .feedback-form {
+    display: flex;
+    flex-direction: row;
+  }
+  .btn-form-section-feedback {
+    width: 150px;
+    height: 48px;
+  }
+}
+/* footer */
+.wrapper-footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #22334d;
+  color: #ffffff;
+}
+.smile-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.first-wrapper-footer {
+  display: flex;
+  flex-direction: column;
+}
+.img-footer {
+  width: 120px;
+}
+.span-footer {
+  text-transform: uppercase;
+}
+@media screen and (min-width: 768px) {
+  .wrapper-footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  .img-paragraph {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+  }
+  .paragraph-footer {
+    display: flex;
+    flex-direction: column;
+  }
+}
