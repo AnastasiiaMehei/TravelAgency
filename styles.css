@@ -134,6 +134,7 @@ header {
 .address-navigation-wrapper {
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 .address {
   display: flex;
@@ -152,15 +153,41 @@ header {
 }
 @media screen and (min-width: 768px) {
 }
+/* section-hero */
+.section-hero {
+  position: relative;
+  background-size: cover;
+  background-position: center;
+}
+.btn-h1-section-hero {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0, 76, 132, 1);
+}
+.btn-section-hero {
+  width: 254px;
+  height: 48px;
+  background-color: #fbd341;
+  color: #000000;
+  border-radius: 15px;
+  font-size: 15px;
+  cursor: pointer;
+}
 /* section-about-tours */
 .menu-section-about-tours {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  padding-right: 15px;
+  gap: 30px;
 }
 .menu-section-about-tours:hover {
   color: #fbd341;
+}
+.wrapper-section-about-tours {
+  display: flex;
+  flex-direction: column;
 }
 
 .slider-section-about-tours {
@@ -171,12 +198,52 @@ header {
   margin-bottom: 10px;
   margin-left: 20px;
   width: fit-content;
-  padding-bottom: 15px;
   margin: 0 auto;
+  margin-bottom: 15px;
 }
 .info-for-tour-section-about-tours {
   display: flex;
   flex-direction: column;
   justify-content: center;
   margin: 15px;
+}
+.paragraph-section-about-tours {
+  margin: 0 auto;
+  color: #3b3b3b;
+}
+.btn-paragraph-section-about-tours {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.btn-section-about-tours {
+  background-color: #fbd341;
+  width: 37px;
+  height: 37px;
+  border-radius: 20px;
+}
+/* section-benefits */
+.div-section-benefits {
+  background-color: #f8f7f7;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 25px;
+}
+/* .our-benefits-section-benefits {
+  font-size: 25px;
+  margin: 0 auto;
+} */
+
+@media screen and (min-width: 768px) {
+  .wrapper-section-benefits {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  .wrapper-section-benefits img {
+    width: 458px;
+    height: 316px;
+    margin-right: 15px;
+  }
 }
