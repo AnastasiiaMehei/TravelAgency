@@ -156,8 +156,13 @@ header {
 .menu-section-about-tours {
   display: flex;
   flex-direction: row;
-  color: #000000;
+  justify-content: center;
+  padding-right: 15px;
 }
+.menu-section-about-tours:hover {
+  color: #fbd341;
+}
+
 .slider-section-about-tours {
   display: flex;
   flex-direction: row;
@@ -165,4 +170,13 @@ header {
   border-radius: 5px;
   margin-bottom: 10px;
   margin-left: 20px;
+  width: fit-content;
+  padding-bottom: 15px;
+  margin: 0 auto;
+}
+.info-for-tour-section-about-tours {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 15px;
 }
