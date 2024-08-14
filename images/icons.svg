@@ -19,6 +19,16 @@
             <path stroke-linecap="round" stroke="currentColor" fill="none" stroke-linejoin="round" stroke-width="5.333"
                 d="M4 5.111h56M4 26.889h56" />
         </symbol>
+        <symbol id="icon--1" viewBox="0 0 34 32">
+            <path fill="#fbd341" style="fill: var(--color1, #fbd341)"
+                d="M16.229 0c8.914 0 16.229 7.086 16.229 16s-7.314 16-16.229 16c-8.914 0-16.229-7.086-16.229-16s7.314-16 16.229-16z">
+            </path>
+        </symbol>
+        <symbol id="icon--2" viewBox="0 0 34 32">
+            <path fill="#fff" style="fill: var(--color2, #fff)" opacity="0.7"
+                d="M17.6 0c9.143 0 16.228 7.086 16.228 16s-7.085 16-16.228 16c-8.914 0-16-7.086-16-16s7.086-16 16-16z">
+            </path>
+        </symbol>
 
     </defs>
 </svg>

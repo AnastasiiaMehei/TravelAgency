@@ -77,8 +77,16 @@
         <!-- =============================== section-hero ===============================  -->
        <section class="section-hero">
                               <img id="heroImage" src="./images/banner4.png" alt="Hero Image">
-                            <button id="btn-img">  <svg xmlns="http://www.w3.org/2000/svg" fill="#000000" width="24" height="24" viewBox="0 0 24 24">
-                            </svg></button>
+                            <button id="btn-img"><svg class="icon--1"  width="18" height="24">
+                                <use href="./images/icons.svg#icon--1"></use>
+                            </svg>
+                            <!-- <svg class="icon--2" width="18" height="24">
+                                <use href="./images/icons.svg#icon--2"></use>
+                            </svg>
+                            <svg class="icon--1"  width="18" height="24">
+                                <use href="./images/icons.svg#icon--1"></use>
+                            </svg> -->
+                        </button>
                           
         <div class="btn-h1-section-hero">
         <h2 class="h2-section-hero">Краща пропозиція по посячному Єгипту із Харкова</h2>
@@ -193,7 +201,7 @@
             </div>
                 
             <div class="second-wrapper-footer">
-                <p>Навігація</p>
+                <a href="#" id="openNavigationModal">Навігація</a>
                 <nav class="nav-footer">
                     <ul>
                         <li><a href="#"> Головна</a></li>
@@ -235,7 +243,7 @@
 </div>
 
             <div class="third-wrapper-footer">
-                <p>Підтримка</p>
+                <a href="#" id="openSupportModal">Підтримка</a>
                 <nav class="nav-footer">
                     <ul>
                         <li><a href="">FAQ</a></li>
@@ -245,7 +253,7 @@
                 </nav>
             </div>
             <div class="fourth-wrapper-footer">
-                <p>Контакти</p>
+                <a href="#" id="openContactsModal">Контакти</a>
                 <address  class="nav-footer">
                     <ul  class="address-list">
                         <li>
@@ -260,6 +268,61 @@
                     </ul>
                 </address>
             </div>
+        </div>
+    </div>
+    <!-- Modal navigation-->
+    <div id="navigationModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span> <!-- Close Button -->
+            <ul>
+                <li>Головна </li>
+                <li>Про компанію</li>
+                <li>Тури</li>
+                <li>Контакти</li>
+                <li>послуги</li>
+            </ul>
+        </div>
+    </div>
+    <!-- Modal support -->
+    <div id="supportModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span> <!-- Close Button -->
+            <ul>
+                <li>FAQ</li>
+                <li>Блог</li>
+                <li>Зворотній зв'язок</li>
+            </ul>
+        </div>
+    </div>
+    <!-- Modal for contacts -->
+    <div id="contactsModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span> <!-- Close Button -->
+            <ul  class="address-list">
+                <li>
+                    <a href="https://www.google.com.ua/maps/place/%D1%83%D0%BB.+%D0%9C%D0%B8%D1%80%D0%BE%D0%BD%D0%BE%D1%81%D0%B8%D1%86%D0%BA%D0%B0%D1%8F,+10,+%D0%A5%D0%B0%D1%80%D1%8C%D0%BA%D0%BE%D0%B2,+%D0%A5%D0%B0%D1%80%D1%8C%D0%BA%D0%BE%D0%B2%D1%81%D0%BA%D0%B0%D1%8F+%D0%BE%D0%B1%D0%BB%D0%B0%D1%81%D1%82%D1%8C,+61000/@50.0016456,36.2342649,17z/data=!3m1!4b1!4m6!3m5!1s0x4127a0e705cde6cf:0xcde3c7990b76137e!8m2!3d50.0016456!4d36.2368398!16s%2Fg%2F11f6y9d6b7?hl=ru&entry=ttu">
+                        <svg xmlns="http://www.w3.org/2000/svg"fill="#ffffff" viewBox="0 0 384 512" width="18" height="18"><path d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 128a64 64 0 1 1 0 128 64 64 0 1 1 0-128z"/></svg>
+                        м. Харків вул. Миройосицька, 10
+                    </a>
+                </li>
+                    <li><a  href="tel:+380999908100"><svg class="input-icon" fill="#ffffff" width="18" height="24">
+                        <use href="./images/icons.svg#icon-phone"></use>
+                    </svg> 38(099)990-81-00</a></li>
+                    <li>
+                        <a href="https://www.facebook.com/" target="_blank">
+                            <svg fill="#ffffff" width="16" height="16">
+                                <use href="./images/icons.svg#icon-facebook"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.instagram.com/" target="_blank">
+                            <svg class="icons-social-media" fill="#ffffff" width="16" height="16">
+                                <use href="./images/icons.svg#icon-instagram"></use>
+                            </svg>
+                            </a>
+                    </li>
+            </ul>
         </div>
     </div>
     </footer>
