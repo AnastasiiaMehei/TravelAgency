@@ -124,7 +124,7 @@ header {
 }
 .top-line {
   padding: 16px 0;
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
   width: 100%;
@@ -159,6 +159,7 @@ header {
   flex-direction: row;
   align-items: center;
   margin: 5px 0;
+  gap: 50px;
 }
 .span-header {
   display: flex;
@@ -168,9 +169,11 @@ header {
   text-transform: uppercase;
 }
 .header-menu-burger {
-  border: 1px solid #fafafa;
+  /* border: 1px solid #fafafa; */
   border-radius: 15px;
+  background-color: transparent;
 }
+
 .address-navigation-wrapper {
   display: flex;
   flex-direction: column;
@@ -192,7 +195,13 @@ header {
   padding: 8px;
   border-radius: 5px;
 }
-/* Enhancements for larger screens */
+.btn-h1-section-hero {
+  padding: 20px;
+  left: 29%;
+  top: 173px;
+  width: max-content;
+  font-size: 6px;
+}
 @media screen and (min-width: 768px) {
   .navigation-header {
     flex-direction: row;
@@ -229,7 +238,8 @@ header {
     /* top: 67%;
     left: 25%; */
     transform: translate(-50%, -50%);
-    padding: 100px;
+    width: -webkit-fill-available;
+    margin-left: 44px;
   }
 
   .btn-section-hero {
@@ -265,10 +275,10 @@ header {
 
   position: absolute;
   top: 75%;
-  left: 27%;
+  left: 32%;
   transform: translate(-50%, -50%);
-  font-size: 15px;
-  padding: 50px;
+  /* font-size: 15px;
+  padding: 50px; */
 }
 .btn-section-hero {
   background-color: #fbd341;
@@ -301,6 +311,7 @@ header {
   .address-list {
     display: flex;
     flex-wrap: wrap;
+    flex-direction: column;
     justify-content: center;
     gap: 10px;
     list-style: none;
@@ -321,10 +332,10 @@ header {
   justify-content: center;
   gap: 30px;
   font-size: 20px;
-  margin-top: 15px;
-  margin-bottom: 15px;
+  margin-top: 50px;
+  margin-bottom: 70px;
 }
-.menu-section-about-tours:hover {
+.list-items-section-about-tours:hover {
   color: #fbd341;
 }
 .wrapper-section-about-tours {
@@ -363,7 +374,7 @@ header {
   height: 37px;
   border-radius: 20px;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1440px) {
   .wrapper-section-about-tours {
     display: flex;
     flex-direction: row;
@@ -380,6 +391,8 @@ header {
 }
 .our-benefits-section-benefits {
   font-size: 25px;
+  margin-top: 30px;
+  margin-bottom: 30px;
 }
 @media screen and (min-width: 768px) {
   .wrapper-section-benefits {
@@ -479,6 +492,15 @@ header {
 .span-footer {
   text-transform: uppercase;
 }
+.paragraph-footer {
+  display: none;
+}
+.kurazh-agency {
+  display: none;
+}
+.nav-footer {
+  display: none;
+}
 @media screen and (min-width: 768px) {
   .wrapper-footer {
     display: flex;
@@ -496,5 +518,11 @@ header {
   .paragraph-footer {
     display: flex;
     flex-direction: column;
+  }
+  .kurazh-agency {
+    display: block;
+  }
+  .nav-footer {
+    display: block;
   }
 }
