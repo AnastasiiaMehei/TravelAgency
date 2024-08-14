@@ -1,4 +1,4 @@
-// main.js
+
 document.addEventListener('DOMContentLoaded', function () {
   // Modal for Тури
   var myModal = document.getElementById('myModal');
