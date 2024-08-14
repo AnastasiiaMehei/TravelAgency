@@ -264,7 +264,40 @@ header {
   background-position: center;
   margin-bottom: 50px;
   padding: 20px;
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+  height: 500px;
+  background-color: #f5f5f5;
 }
+.section-hero img {
+  transition: opacity 1s ease-in-out;
+  position: absolute;
+  width: 100%;
+  height: auto;
+}
+#btn-img {
+  background-color: #ffffff;
+  border: 2px solid #000000; /* Adds a border */
+  color: #000000;
+  padding: 10px 20px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+#btn-img:hover {
+  background-color: #ffff00; /* Yellow background on hover */
+}
+#btn-img svg {
+  width: 24px; /* Adjust based on your icon size */
+  height: 24px;
+}
+
 .btn-h1-section-hero {
   background-color: rgba(
     255,
@@ -290,6 +323,7 @@ header {
   width: 145px;
   font-size: 10px;
 }
+
 @media screen and (min-width: 375px) {
   .navigation-links {
     flex-direction: row;
