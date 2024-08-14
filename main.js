@@ -29,44 +29,45 @@ document.addEventListener('DOMContentLoaded', function () {
   });
 });
 // Modal
+// main.js
 document.addEventListener('DOMContentLoaded', function () {
-  var modal = document.getElementById('myModal');
-  var btn = document.getElementById('openModal');
-  var span = document.querySelector('.close');
+  // Modal for Тури
+  var myModal = document.getElementById('myModal');
+  var openModalBtn = document.getElementById('openModal');
+  var closeModalBtn = myModal.querySelector('.close');
 
-  btn.onclick = function (event) {
+  openModalBtn.onclick = function (event) {
     event.preventDefault(); // Prevent default link behavior
-    modal.style.display = 'block';
+    myModal.style.display = 'block';
   };
 
-  span.onclick = function () {
-    modal.style.display = 'none';
+  closeModalBtn.onclick = function () {
+    myModal.style.display = 'none';
   };
 
   window.onclick = function (event) {
-    if (event.target == modal) {
-      modal.style.display = 'none';
+    if (event.target == myModal) {
+      myModal.style.display = 'none';
     }
   };
-});
-// Модалка для замовлення
-document.addEventListener('DOMContentLoaded', function () {
-  var modal = document.getElementById('modalForServices');
-  var btn = document.getElementById('openServicesModal');
-  var span = document.querySelector('.close');
 
-  btn.onclick = function (event) {
+  // Modal for Послуги
+  var modalForServices = document.getElementById('modalForServices');
+  var openServicesModalBtn = document.getElementById('openServicesModal');
+  var closeServicesModalBtn = modalForServices.querySelector('.close');
+
+  openServicesModalBtn.onclick = function (event) {
     event.preventDefault(); // Prevent default link behavior
-    modal.style.display = 'block';
+    modalForServices.style.display = 'block';
   };
 
-  span.onclick = function () {
-    modal.style.display = 'none';
+  closeServicesModalBtn.onclick = function () {
+    modalForServices.style.display = 'none';
   };
 
   window.onclick = function (event) {
-    if (event.target == modal) {
-      modal.style.display = 'none';
+    if (event.target == modalForServices) {
+      modalForServices.style.display = 'none';
     }
   };
 });
