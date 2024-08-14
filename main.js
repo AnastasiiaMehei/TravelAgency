@@ -28,3 +28,24 @@ document.addEventListener('DOMContentLoaded', function () {
     }, 1000);
   });
 });
+// Modal
+document.addEventListener('DOMContentLoaded', function() {
+    var modal = document.getElementById('myModal');
+    var btn = document.getElementById("openModal");
+    var span = document.querySelector('.close');
+
+    btn.onclick = function(event) {
+        event.preventDefault(); // Prevent default link behavior
+        modal.style.display = "block";
+    }
+
+    span.onclick = function() {
+        modal.style.display = "none";
+    }
+
+    window.onclick = function(event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    }
+});

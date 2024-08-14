@@ -535,6 +535,52 @@ header {
 .nav-footer {
   display: none;
 }
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  opacity: 0.8;
+}
+.modal-content {
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 239px;
+  height: 253px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  background-color: rgba(51, 151, 230, 0.8); /* Semi-transparent blue */
+}
+.modal-content ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.modal-content ul li {
+  padding: 8px 16px;
+  cursor: pointer;
+}
+
+.modal-content ul li:last-child {
+  border-bottom: none;
+}
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
 @media screen and (min-width: 768px) {
   .wrapper-footer {
     display: flex;
@@ -557,6 +603,9 @@ header {
     display: block;
   }
   .nav-footer {
+    display: block;
+  }
+  .modal {
     display: block;
   }
 }
