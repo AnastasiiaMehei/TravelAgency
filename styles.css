@@ -146,10 +146,10 @@ header {
   flex-direction: column;
   align-items: center;
 }
-.navigation-links li,
+/* .navigation-links li,
 .address li {
   margin: 5px 0;
-}
+} */
 .header__logo {
   cursor: pointer;
   display: flex;
@@ -177,6 +177,7 @@ header {
   display: flex;
   flex-direction: column;
   align-items: center;
+  display: none;
 }
 .address {
   display: flex;
@@ -201,7 +202,7 @@ header {
   }
 
   .logo {
-    margin-bottom: 0; /* Reset margin for larger screens */
+    margin-bottom: 0; 
   }
 
   .navigation-links {
@@ -222,20 +223,21 @@ header {
 
 /* Inner navigation */
 .navigation-links li {
-  position: relative; /* Add this line */
+  position: relative;
 }
 
 .innerNav {
   position: absolute;
   list-style: none;
-  top: 100%; /* Position the submenu directly below the parent li */
-  left: 0; /* Align the submenu with the left edge of the parent li */
+  top: 100%;
+  left: 0;
   visibility: hidden;
   opacity: 0;
   transition: opacity 0.3s ease-in-out;
+  width: max-content;
 }
 .innerNav li {
-  background: blue;
+  background-color: rgba(80, 151, 205, 0.5);
 }
 .navigation-links li:hover .innerNav,
 .navigation-links li:focus-within .innerNav {
@@ -244,11 +246,22 @@ header {
 }
 
 /* hero */
+.section-hero {
+  height: 287px;
+}
+#heroImage {
+  background: linear-gradient(
+      263deg,
+      rgba(15, 37, 71, 0.9999999999999999) 0%,
+      rgba(34, 51, 77, 0) 100%
+    ),
+    url('./images/banner4.png');
+}
 .btn-h1-section-hero {
   color: #ffffff;
   background-color: rgba(217, 217, 217, 1);
   position: absolute;
-  transform: translate(-50%, -50%);
+  /* transform: translate(-50%, -50%); */
   width: -webkit-fill-available;
   width: max-content;
   margin-left: 44px;
@@ -258,12 +271,12 @@ header {
   top: 173px;
 }
 .btn-section-hero {
-  width: auto; /* Reset button width */
-  padding: 10px 20px; /* Adjust button padding for larger screens */
+  width: auto;
+  padding: 10px 20px; 
 }
 
 h1 {
-  font-size: 36px; /* Larger font size for larger screens */
+  font-size: 36px; 
 }
 .h2-section-hero {
   margin-bottom: 40px;
@@ -305,10 +318,12 @@ h1 {
     255,
     255,
     0.7
-  ); /* Example: slightly less transparent */
-  /* transform: translate(0%, -194%); */
-  width: 690px;
+  ); 
+  background-color: rgba(255, 255, 255, 0.7);
+  transform: translate(-5%, -118%);
+  width: 901px;
   padding: 37px;
+  position: sticky;
 }
 
 .btn-section-hero {
@@ -325,20 +340,20 @@ h1 {
 @media screen and (min-width: 375px) {
   .navigation-links {
     flex-direction: row;
-    gap: 10px; /* Slightly more space between links for better readability */
+    gap: 10px; /
   }
 
   .address {
     flex-direction: row;
-    gap: 10px; /* Align address items horizontally with some gap */
+    gap: 10px; 
   }
   .address ul {
     display: flex;
-    flex-wrap: wrap; /* Allows items to wrap if there's not enough space */
-    justify-content: center; /* Centers items horizontally */
-    gap: 10px; /* Adds some space between items */
-    list-style: none; /* Removes bullet points */
-    padding: 0; /* Removes default padding */
+    flex-wrap: wrap; 
+    justify-content: center; 
+    gap: 10px; 
+    list-style: none; 
+    padding: 0; 
   }
   .address-list {
     display: flex;
@@ -349,16 +364,53 @@ h1 {
     list-style: none;
     padding: 0;
   }
-  .section-hero {
-    padding: 30px; /* Slightly more padding for a bit larger screens */
+  .phone-list {
+    position: relative;
+    padding-bottom: 10px; 
+  }
+  
+  .phone-list::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 1px;
+    background-color:#F7F8F9; 
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
+  .container-footer-links {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
   }
 
   h1 {
-    font-size: 28px; /* Slightly larger font size for better readability */
+    font-size: 28px; 
   }
 }
+@media screen and (max-width: 767px) {
+.section-hero {
+  height: 544px;
+  height: 287px;
+}
+.btn-h1-section-hero {
 
+  transform: translate(-55%, -188%);
+ 
+}
+}
 /* section-about-tours */
+.section-about-tours {
+  margin-top: 100px; 
+}
+@media screen and (max-width: 767px) {
+  .section-about-tours {
+    margin-top: 50px; 
+    padding: 50px 0; 
+
+  }
+}
 .menu-section-about-tours {
   display: flex;
   flex-direction: row;
@@ -374,10 +426,15 @@ h1 {
 .wrapper-section-about-tours {
   display: flex;
   flex-direction: column;
+gap: 30px;
+align-items: center;
+}
+.wrapper-section-about-tours span {
+  display: none;
 }
 .slider-section-about-tours {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   background-color: #f8f7f7;
   border-radius: 5px;
   margin-bottom: 10px;
@@ -413,9 +470,15 @@ h1 {
     flex-direction: row;
     margin-bottom: 50px;
   }
+  .wrapper-section-about-tours span {
+    display: block;
+  }
 }
 
 /* section-benefits */
+.section-benefits {
+  background-color: #f8f7f7;
+}
 .div-section-benefits {
   background-color: #f8f7f7;
   display: flex;
@@ -424,9 +487,18 @@ h1 {
   margin-bottom: 45px;
 }
 .our-benefits-section-benefits {
-  font-size: 25px;
+  font-size: 24px;
+  line-height: 30px;
+  color: #000000;
+
   margin-top: 30px;
   margin-bottom: 30px;
+}
+.wrapper-section-benefits p {
+  font-size: 16px;
+line-height: 24px;
+margin-top: 20px;
+margin-bottom: 20px;
 }
 @media screen and (min-width: 768px) {
   .wrapper-section-benefits {
@@ -434,6 +506,8 @@ h1 {
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    width: 917px;
+    gap: 50px;
   }
   .wrapper-section-benefits img {
     width: 458px;
@@ -462,6 +536,12 @@ h1 {
 
 .paragraph-section-feedback {
   text-transform: uppercase;
+  font-size: 24px;
+line-height: 30px;
+color: #ffffff;
+position: absolute;
+top: 5%;
+left: 4%;
 }
 .feedback-form {
   position: absolute;
@@ -490,6 +570,23 @@ h1 {
 .btn-form-section-feedback {
   background-color: #fbd341;
   border-radius: 15px;
+}
+.feedback-form input[type="text"],
+.feedback-form input[type="email"],
+.feedback-form input[type="tel"] {
+  background-color: inherit; /* Зберігає фон прозорим */
+  border: none; /* Прибирає стандартну рамку */
+  border-bottom: 1px solid #ffffff; /* Нижня рамка */
+  color: #ffffff; /* Колір тексту */
+  padding: 10px 0; /* Відступи зверху і знизу */
+  width: 100%; /* Ширина на 100% батьківського елемента */
+  outline: none; /* Прибирає стандартний outline */
+}
+
+.feedback-form input[type="text"]::placeholder,
+.feedback-form input[type="email"]::placeholder,
+.feedback-form input[type="tel"]::placeholder {
+  color: #ffffff; /* Колір плейсхолдера */
 }
 @media screen and (min-width: 768px) {
   .feedback-form {
@@ -524,6 +621,7 @@ h1 {
 }
 .span-footer {
   text-transform: uppercase;
+  font-size: 28px;
 }
 .paragraph-footer {
   display: none;
@@ -551,9 +649,11 @@ h1 {
   .paragraph-footer {
     display: flex;
     flex-direction: column;
+    align-items: center;align-items: center;
   }
   .kurazh-agency {
     display: block;
+    width: 290px;
   }
   .nav-footer {
     display: block;
@@ -565,4 +665,20 @@ h1 {
 }
 .social-media-li {
   height: 16px;
+}
+
+.decorative-line {
+  position: relative;
+  padding-bottom: 10px; /* Відступ знизу для лінії */
+}
+
+.decorative-line::after {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 1px;
+  background-color: #F7F8F9; /* Колір лінії */
+  position: absolute;
+  bottom: 0;
+  left: 0;
 }

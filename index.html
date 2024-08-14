@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TravelAgency</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/modern-normalize@2.0.0/modern-normalize.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&amp;display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&amp;family=Roboto:wght@400;500;700&amp;display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./styles.css" />
     <script defer type="module" src="./main.js"></script>
 </head>
@@ -70,7 +71,7 @@
                         <ul class="navigation-links">
                             <li><a href="">Головна</a></li>
                             <li>
-                                <a href="#section-about-tours" class="your-button-class">Тури</a>
+                                <a href="#" class="your-button-class">Тури</a>
                                 <ul class="innerNav">
                                     <li><a href="#">Гарячі тури</a></li>
                                     <li><a href="#">Пошук туру</a></li>
@@ -141,6 +142,7 @@
                     </ul>
                 </div>
                 <div class="wrapper-section-about-tours">
+                    <span><svg xmlns="http://www.w3.org/2000/svg" height="48px" viewBox="0 0 24 24" width="48px" fill="#666666"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M15.41 16.59L10.83 12l4.58-4.59L14 6l-6 6 6 6 1.41-1.41z"/></svg></span>
                     <div class="slider-section-about-tours">
                         <img src="./images/swim1x.png" alt="swim">
                         <div class="info-for-tour-section-about-tours">
@@ -198,6 +200,7 @@
                             </div>
                         </div>
                     </div>
+                    <span><svg xmlns="http://www.w3.org/2000/svg" height="48px" viewBox="0 0 24 24" width="48px" fill="#666666"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41z"/></svg></span>
                 </div>
             </div>
         </section>
@@ -208,13 +211,10 @@
                 <div class="wrapper-section-benefits">
                     <img src="./images/scuba-diver1x.png" alt="scuba diver">
                     <p>Дуже довго підбирали різні варіанти для того, щоб відсвяткувати свій ювілейний День народження у
-                        подорожі
-                        та не могли визначитись... <br> Вирішили звернутися за допомогою до турагенства. Гульнара,
-                        вислухавши
-                        всі побажання, запропонувала відпочинок у Туреччині готель <br> Justiniano Club Park Conti 5* в
+                        подорожі та не могли визначитись... Вирішили звернутися за допомогою до турагенства. Гульнара,
+                        вислухавши всі побажання, запропонувала відпочинок у Туреччині готель Justiniano Club Park Conti 5* в
                         Окурджаларі біля Аланії. Ми дуже вдячні їй за запропонований варіант!! Відпочинок вийшов чудовий
-                        Готель
-                        <br> з великою доглянутою територією уважний обслуговуючий персонал. Відмінний номер з видом на
+                        Готель з великою доглянутою територією уважний обслуговуючий персонал. Відмінний номер з видом на
                         море.
                     </p>
                 </div>
@@ -224,14 +224,13 @@
         <section class="section-feedback">
             <div class="container wrapper-section-feedback background-image-container">
                 <div class="feedback-info">
-                    <p class="paragraph-section-feedback"> Хочу пропозицію по туру</p>
                     <div class="form-container">
+                        <p class="paragraph-section-feedback"> Хочу пропозицію по туру</p>
                         <form class="feedback-form" id="proposal-form">
                             <input type="text" id="name" name="name" placeholder="Ім'я" required>
                             <input type="email" id="email" name="email" placeholder="Email" required>
-                            <input type="tel" id="phone" name="phone" placeholder="Телефон" pattern="[0-9]{10}"
-                                required>
-                            <select id="country" name="country" required>
+                            <input type="tel" id="phone" name="phone" placeholder="Телефон" pattern="[0-9]{10}" required>
+                                         <select id="country" name="country" required>
                                 <option value="">Країна туру</option>
                                 <option value="turkey">Турція</option>
                                 <option value="egypt">Єгипет</option>
@@ -259,8 +258,7 @@
                             <div class="paragraph-footer">
                                 <p class="span-footer">Кураж тур</p>
                                 <p>Світ навколо тебе</p>
-                                <p>Варто тільки захотіти</p>
-                            </div>
+                                <p class="decorative-line">Варто тільки захотіти</p>                            </div>
                         </div>
                     </div>
                     <p class="kurazh-agency">Кураж тур агенція, яка надає послуги із пошуку та підбору турів для вас і
@@ -305,22 +303,24 @@
                                 м. Харків вул. Миройосицька, 10
                             </a>
                         </li>
-                        <li><a href="tel:+380999908100"><svg class="input-icon" fill="#ffffff" width="18" height="24">
+                        <li class="phone-list"><a href="tel:+380999908100"><svg class="input-icon" fill="#ffffff" width="18" height="24">
                                     <use href="./images/icons.svg#icon-phone"></use>
                                 </svg> 38(099)990-81-00</a></li>
                         <li>
-                            <a href="https://www.facebook.com/" target="_blank">
-                                <svg fill="#ffffff" width="16" height="16">
-                                    <use href="./images/icons.svg#icon-facebook"></use>
-                                </svg>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://www.instagram.com/" target="_blank">
-                                <svg class="icons-social-media" fill="#ffffff" width="16" height="16">
-                                    <use href="./images/icons.svg#icon-instagram"></use>
-                                </svg>
-                            </a>
+                            <ul class="container-footer-links"><li>
+                                <a href="https://www.facebook.com/" target="_blank">
+                                    <svg fill="#ffffff" width="16" height="16">
+                                        <use href="./images/icons.svg#icon-facebook"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.instagram.com/" target="_blank">
+                                    <svg class="icons-social-media" fill="#ffffff" width="16" height="16">
+                                        <use href="./images/icons.svg#icon-instagram"></use>
+                                    </svg>
+                                </a>
+                            </li></ul>
                         </li>
                     </ul>
                 </address>
