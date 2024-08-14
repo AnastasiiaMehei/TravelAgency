@@ -278,23 +278,19 @@ h1 {
   height: auto;
 }
 #btn-img {
-  background-color: #fbd341;
   position: sticky;
   transform: translate(10%, -117%);
-  /* background-color: transparent; */
+  background-color: transparent;
   padding: 10px 20px;
   cursor: pointer;
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   cursor: pointer;
   margin: 0 auto;
 }
-#btn-img:hover {
-  background-color: #ffff00; /* Yellow background on hover */
-}
+
 #btn-img svg {
   width: 24px; /* Adjust based on your icon size */
   height: 24px;
