@@ -269,7 +269,16 @@ header {
   align-items: center;
   max-height: 34px;
 }
-.btn-h1-section-hero {
+/* .btn-h1-section-hero {
+  position: absolute;
+  top: 95px;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  background-color: transparent;
+} */
+.h2-section-hero {
+  display: none;
 }
 @media screen and (min-width: 768px) {
   .section-hero {
@@ -280,14 +289,21 @@ header {
     transform: translate(-45%, -192%);
     width: 1080px;
   }
+  .btn-h1-section-hero {
+    background-color: rgba(255, 255, 255, 0.7);
+  }
 }
 .btn-h1-section-hero {
-  background-color: rgba(255, 255, 255, 0.7);
   padding: 20px;
   font-size: 16px;
-  z-index: 1000;
   text-align: center;
   margin-bottom: 20px;
+  position: absolute;
+  top: 95px;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  background-color: transparent;
 }
 .btn-section-hero {
   background-color: #fbd341;
