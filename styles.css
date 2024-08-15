@@ -298,7 +298,7 @@ header {
   left: 0;
   width: 100%;
   z-index: 1000;
-  background-color: transparent;
+  /* background-color: transparent; */
 }
 .btn-section-hero {
   background-color: #fbd341;
