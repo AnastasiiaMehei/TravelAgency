@@ -783,10 +783,6 @@ h1 {
   display: flex;
   flex-direction: column;
 }
-.first-wrapper-footer:hover {
-  color: #fbd341;
-}
-
 .img-footer {
   width: 120px;
 }
