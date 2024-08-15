@@ -692,12 +692,12 @@ h1 {
 }
 .paragraph-section-feedback {
   text-transform: uppercase;
-  font-size: 24px;
+  font-size: 20px;
   line-height: 30px;
   color: #ffffff;
   position: absolute;
-  top: 24%;
-  left: 39%;
+  top: 11%;
+  left: 10%;
 }
 .feedback-form {
   position: absolute;
@@ -751,6 +751,11 @@ h1 {
   .btn-form-section-feedback {
     width: 150px;
     height: 48px;
+  }
+  .paragraph-section-feedback {
+    font-size: 24px;
+    top: 24%;
+    left: 39%;
   }
 }
 
