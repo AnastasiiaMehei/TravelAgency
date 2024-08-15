@@ -246,10 +246,10 @@ header {
 }
 
 /* hero */
-.section-hero,
-.section-about-tours {
+.section-hero {
   background-color: #f8f7f7;
 }
+
 #heroImage {
   background: linear-gradient(
       263deg,
@@ -309,6 +309,7 @@ header {
 .section-about-tours {
   margin-top: 20vh; /* Гнучкий відступ для мобільних */
   padding: 105px 0;
+  background-color: #ffffff;
 }
 
 /* Адаптація для ширини від 375px */
