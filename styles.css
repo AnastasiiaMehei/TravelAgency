@@ -267,14 +267,18 @@ header {
   display: flex;
   flex-direction: column;
   align-items: center;
-  max-height: 300px;
+  max-height: 34px;
+}
+.btn-h1-section-hero {
 }
 @media screen and (min-width: 768px) {
   .section-hero {
+    max-height: 300px;
   }
   .btn-h1-section-hero {
     position: sticky;
-    transform: translate(-15%, -171%);
+    transform: translate(-45%, -192%);
+    width: 1080px;
   }
 }
 .btn-h1-section-hero {
@@ -301,63 +305,79 @@ header {
   gap: 10px;
 }
 /* section about-tours */
+/* Базовий стиль */
 .section-about-tours {
-  margin-top: 100px;
+  margin-top: 20vh; /* Гнучкий відступ для мобільних */
+  padding: 105px 0;
 }
-.menu-section-about-tours {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  gap: 30px;
-  font-size: 20px;
-  margin-top: 50px;
-  margin-bottom: 70px;
+
+/* Адаптація для ширини від 375px */
+@media screen and (min-width: 375px) {
+  .section-about-tours {
+    margin-top: 30vh;
+  }
 }
-.list-items-section-about-tours:hover {
-  color: #fbd341;
-}
-.wrapper-section-about-tours {
-  display: flex;
-  flex-direction: column;
-}
-.slider-section-about-tours {
-  display: flex;
-  flex-direction: row;
-  background-color: #ffffff;
-  border-radius: 5px;
-  margin-bottom: 10px;
-  padding: 20px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-.slider-section-about-tours img {
-  border-radius: 5px;
-  margin-right: 20px;
-}
-.info-for-tour-section-about-tours {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-.paragraph-section-about-tours {
-  margin: 0 auto;
-  color: #3b3b3b;
-}
-.btn-paragraph-section-about-tours {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-}
-.btn-section-about-tours {
-  background-color: #fbd341;
-  width: 37px;
-  height: 37px;
-  border-radius: 20px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-  border: none;
+
+/* Адаптація для ширини від 768px */
+@media screen and (min-width: 768px) {
+  .section-about-tours {
+    /* margin-top: 10vh;  */
+  }
+  .menu-section-about-tours {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 30px;
+    font-size: 20px;
+    margin-top: 50px;
+    margin-bottom: 70px;
+  }
+  .list-items-section-about-tours:hover {
+    color: #fbd341;
+  }
+  .wrapper-section-about-tours {
+    display: flex;
+    flex-direction: column;
+  }
+  .slider-section-about-tours {
+    display: flex;
+    flex-direction: row;
+    background-color: #ffffff;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  .slider-section-about-tours img {
+    border-radius: 5px;
+    margin-right: 20px;
+  }
+  .info-for-tour-section-about-tours {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .paragraph-section-about-tours {
+    margin: 0 auto;
+    color: #3b3b3b;
+  }
+  .btn-paragraph-section-about-tours {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .btn-section-about-tours {
+    background-color: #fbd341;
+    width: 37px;
+    height: 37px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border: none;
+  }
 }
 /* Адаптивні стилі для мобільних пристроїв */
 @media screen and (max-width: 767px) {
@@ -377,7 +397,6 @@ header {
   }
 
   .section-about-tours {
-    margin-top: 50px;
     padding: 20px 0;
   }
   .menu-section-about-tours {
@@ -412,7 +431,7 @@ h1 {
   font-size: 15px;
 }
 .header-actions {
-  display: none;
+  display: block;
 }
 .section-hero img {
   background-color: #f8f7f7;
@@ -433,9 +452,9 @@ h1 {
   gap: 10px;
 }
 /* Стилі для секції about-tours */
-.section-about-tours {
+/* .section-about-tours {
   margin-top: 100px;
-}
+} */
 .menu-section-about-tours {
   display: flex;
   flex-direction: row;
@@ -601,11 +620,15 @@ h1 {
 @media screen and (min-width: 1440px) {
   .wrapper-section-about-tours {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     margin-bottom: 50px;
   }
   .wrapper-section-about-tours span {
     display: block;
+  }
+  .slider-section-about-tours {
+    display: flex;
+    flex-direction: row;
   }
 }
 
@@ -673,8 +696,8 @@ h1 {
   line-height: 30px;
   color: #ffffff;
   position: absolute;
-  top: 5%;
-  left: 4%;
+  top: 24%;
+  left: 39%;
 }
 .feedback-form {
   position: absolute;
