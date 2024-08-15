@@ -56,7 +56,6 @@ img {
 html {
   scroll-behavior: smooth;
 }
-
 /* Root styles */
 :root {
   font-family: Inter, sans-serif;
@@ -82,20 +81,17 @@ html {
 
   --animation-hover: 250ms ease-in;
 }
-
 /* container */
 .container {
   padding: 0px 16px;
   max-width: 320px;
   margin: 0 auto;
 }
-
 @media screen and (max-width: 374.98px) {
   .container {
     max-width: 375px;
   }
 }
-
 @media screen and (min-width: 375px) {
   .container {
     max-width: 375px;
@@ -113,7 +109,6 @@ html {
     max-width: 1440px;
   }
 }
-
 /* ====================================== header ====================================== */
 header {
   position: fixed;
@@ -146,10 +141,6 @@ header {
   flex-direction: column;
   align-items: center;
 }
-/* .navigation-links li,
-.address li {
-  margin: 5px 0;
-} */
 .header__logo {
   cursor: pointer;
   display: flex;
@@ -391,10 +382,9 @@ header {
     border: none;
   }
 }
-/* Адаптивні стилі для мобільних пристроїв */
 @media screen and (max-width: 767px) {
   .section-hero {
-    height: auto; /* Висота секції автоматично підлаштовується під вміст */
+    height: auto;
     padding: 20px 0;
   }
 
@@ -481,10 +471,8 @@ h1 {
   margin-top: 80px;
   /* margin-bottom: 70px; */
 }
-.address-list {
-  .list-items-section-about-tours:hover {
-    color: #fbd341;
-  }
+.address-list:hover {
+  color: #fbd341;
 }
 .wrapper-section-about-tours {
   display: flex;
@@ -498,11 +486,9 @@ h1 {
   margin-bottom: 10px;
   padding: 20px;
 }
-.container-footer-links {
-  .slider-section-about-tours img {
-    border-radius: 5px;
-    margin-right: 20px;
-  }
+.slider-section-about-tours img {
+  border-radius: 5px;
+  margin-right: 20px;
 }
 @media screen and (min-width: 768px) {
   .container-footer-links {
@@ -590,7 +576,6 @@ h1 {
   gap: 30px;
   font-size: 20px;
   margin-top: 80px;
-  /* margin-bottom: 70px; */
 }
 .list-items-section-about-tours:hover {
   color: #fbd341;
@@ -650,7 +635,6 @@ h1 {
     flex-direction: row;
   }
 }
-
 /* section-benefits */
 .section-benefits {
   background-color: #f8f7f7;
@@ -846,7 +830,6 @@ h1 {
   display: flex;
   justify-content: center;
   position: sticky;
-  /* transform: translateY(-217%); */
   transform: translateY(-63%);
 }
 .social-media-li {
@@ -856,15 +839,14 @@ h1 {
 .decorative-line {
   position: relative;
   padding-bottom: 10px;
-
-  .decorative-line::after {
-    content: '';
-    display: block;
-    width: 100%;
-    height: 1px;
-    background-color: #f7f8f9;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-  }
+}
+.decorative-line::after {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 1px;
+  background-color: #f7f8f9;
+  position: absolute;
+  bottom: 0;
+  left: 0;
 }
