@@ -342,6 +342,7 @@ header {
     gap: 30px;
     font-size: 20px;
     margin-top: 50px;
+    padding-bottom: 15px;
   }
   .list-items-section-about-tours:hover {
     color: #fbd341;
@@ -501,6 +502,13 @@ h1 {
   .slider-section-about-tours img {
     border-radius: 5px;
     margin-right: 20px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container-footer-links {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
   }
 }
 .info-for-tour-section-about-tours {
