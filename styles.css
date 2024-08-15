@@ -833,6 +833,7 @@ h1 {
 .buttons {
   display: flex;
   justify-content: center;
+  flex-direction: row;
   position: sticky;
   transform: translateY(-63%);
 }
