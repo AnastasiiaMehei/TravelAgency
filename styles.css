@@ -281,7 +281,7 @@ header {
     position: sticky;
     transform: translate(-15%, 225%);
     width: 1080px;
-    background-color: rgba(255, 255, 255, 0.7);
+    background-color: rgba(80, 151, 205, 0.5);
     top: 219px;
   }
   .h2-section-hero {
@@ -829,6 +829,9 @@ h1 {
   }
   .nav-footer {
     display: block;
+  }
+  .buttons {
+    transform: translateY(-190%);
   }
 }
 .buttons {
