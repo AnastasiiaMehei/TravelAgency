@@ -275,7 +275,7 @@ header {
   }
   .btn-h1-section-hero {
     position: sticky;
-    transform: translate(-15%, 225%);
+    transform: translate(0, 200%);
     width: 1080px;
     background-color: rgba(80, 151, 205, 0.5);
     top: 219px;
@@ -291,7 +291,6 @@ header {
   margin-bottom: 20px;
   position: absolute;
   top: 90px;
-  left: 0;
   width: 100%;
   z-index: 1000;
   /* background-color: transparent; */
